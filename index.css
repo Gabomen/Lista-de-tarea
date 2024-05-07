@@ -1,0 +1,167 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+}
+
+body, h2, h1, p {
+    margin: 0;
+}
+
+body {
+    padding-top: 4rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    height: 100vh;
+    color-scheme: blue;
+    background-color: white;
+    color: black;
+}
+
+#nav {
+    background-color: #1e293b;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav-container {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+#nav-title {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#nav-btn {
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #020617;
+    color: white;
+    transition: all 0.175s ease-in-out;
+}
+
+#nav-btn:active {
+    background-color: #111827;
+    color: white;
+}
+
+#nav-btn>svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+#nav-links-container {
+    display: none;
+    gap: 1rem;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 1rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+#main-title {
+    font-size: 3rem;
+}
+
+#main-title>span {
+    color: blue;
+}
+
+#main-desc-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#desc-text {
+    text-align: justify;
+}
+
+#main-btn {
+    background-color: #1e293b;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: all 0.175s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#main-btn:hover {
+    background-color: #374151;
+}
+
+#pie-de-pagina {
+    background-color: #020617;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+@media (min-width: 768px) {
+    #nav-btn {
+        display: none;
+    }
+
+    #nav-links-container {
+        display: flex;
+    }
+
+    #main-container {
+        flex-direction: row;
+    }
+
+    #main-title {
+        width: 50%;
+        font-size: 5rem;
+    }
+
+    #main-desc-container {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #main-title {
+        font-size: 7rem;
+    }
+}
